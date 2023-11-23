@@ -15,7 +15,6 @@ enum class FoodType {
     FRUIT,
     VEGETABLE,
     MEAT,
-    UNDEFINED
 }
 
 /**
@@ -59,7 +58,6 @@ object FoodFactory {
             Chicken -> FoodType.MEAT
             Apple -> FoodType.FRUIT
             Cucumber -> FoodType.VEGETABLE
-            else -> FoodType.UNDEFINED
         }
     }
 }
