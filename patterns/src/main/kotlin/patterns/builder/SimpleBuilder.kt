@@ -1,3 +1,5 @@
+package patterns.builder
+
 /**
  * Represents a simple data structure, constructed using the Builder design pattern.
  *
@@ -64,10 +66,10 @@ class SimpleBuilder private constructor(
 }
 
 /**
- * Main function demonstrating the usage of the SimpleBuilder and its Builder class.
+ * Main function demonstrating the usage of the patterns.builder.SimpleBuilder and its Builder class.
  */
 fun main() {
-    // Example 1: Creating a SimpleBuilder instance with specified title and description.
+    // Example 1: Creating a patterns.builder.SimpleBuilder instance with specified title and description.
     val simpleBuilder1 = SimpleBuilder.Builder()
         .setTitle("Main Title 1")
         .setDescription("Some Description 1")
@@ -79,7 +81,7 @@ fun main() {
 
     println("-----------------------------------------------------")
 
-    // Example 2: Creating a SimpleBuilder instance with specified title and count.
+    // Example 2: Creating a patterns.builder.SimpleBuilder instance with specified title and count.
     val simpleBuilder2 = SimpleBuilder.Builder()
         .setTitle("Main Title 2")
         .setCount(127)
