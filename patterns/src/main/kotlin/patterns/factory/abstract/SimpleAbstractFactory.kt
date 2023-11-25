@@ -96,7 +96,7 @@ fun main() {
     // Create instances of tree factories for different tree types
     val birchFactory = TreeFactory.createFactory<Birch>()
     val appleTreeFactory = TreeFactory.createFactory<AppleTree>()
-    val acaciaFactory = TreeFactory.createFactory<Acacia>()
+    val acaciaFactory = TreeFactory.createFactory<Birch>()
 
     // Use the tree factories to create specific types of trees
     val birch = birchFactory.makeTree()
