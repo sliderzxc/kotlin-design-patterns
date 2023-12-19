@@ -41,12 +41,10 @@ class AuthorizationPresenter {
      * @return The user name if authorized, otherwise "Unknown".
      */
     val userName: String
-        get() {
-            return when (val currentState = this.state) {
-                is Authorized -> currentState.userName
-                is Unauthorized -> "Unknown"
-            }
-        }
+        get() = when (val currentState = this.state) {
+            is Authorized -> currentState.userName
+            is Unauthorized -> "Unknown"
+    }
 
     /**
      * Logs in a user and changes the state to Authorized.
